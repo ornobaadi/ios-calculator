@@ -11,11 +11,10 @@ body{
     width: 100%;
     padding: 20px;
     font-size: 5rem;
-    text-align: right;
+    text-align: left;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
-
 }
 
 #calculator{
@@ -29,6 +28,7 @@ body{
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 10px;
     padding: 30px;
 }
@@ -71,6 +71,12 @@ button:active{
     grid-row: 5;
     grid-column: 3 / span 2;
 }
+
+.percentage{
+    grid-row: 5;
+    grid-column: 2;
+}
+
 
 
 
